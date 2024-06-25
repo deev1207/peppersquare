@@ -1,0 +1,413 @@
+.card-container {
+  width: 542px;
+  height: 400px;
+  border-radius: 20px;
+  border: solid 1px #D9D9D9;
+  margin: 20px;
+}
+
+.image {
+  width: 542px;
+  height: 295px;
+  cursor: pointer;
+}
+
+.cards-parent {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 40px;
+  margin-right: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.date {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.info {
+  margin: 20px;
+}
+
+.date-icon {
+  margin-right: 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+}
+
+.school-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1000px;
+  ;
+}
+
+.donate {
+  background: #F54E39;
+  border: none;
+  width: 163px;
+  height: 50px;
+  color: white;
+  border-radius: 7px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
+}
+
+
+.csr {
+  background: #FFFFFF;
+  border: solid 1px#F54E39;
+  width: 163px;
+  height: 50px;
+  color: #F54E39;
+  border-radius: 7px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
+
+}
+
+.heart {
+  margin-left: 5px;
+}
+
+.school-item {
+  font-family: Poppins;
+  color: #1A1A1A;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  border: none;
+  background: #FFFFFF;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
+}
+
+.imageContainer {
+  position: relative;
+  /* Required for positioning the text overlay */
+  width: 100%;
+  max-width: 1449px;
+  /* Ensure the container fits the image size */
+  margin: 0 auto;
+  /* Center the container if desired */
+}
+
+
+
+.textOverlay-1 {
+  position: absolute;
+  /* Position the text over the image */
+  top: 40%;
+  /* Adjust this value to position vertically */
+  left: 50%;
+  /* Adjust this value to position horizontally */
+  transform: translate(-50%, -50%);
+  /* Center the text */
+  color: white;
+  /* Text color */
+  padding: 10px;
+  /* Optional: padding around the text */
+  border-radius: 5px;
+  /* Optional: rounded corners */
+  font-family: Playfair Display;
+  font-size: 82px;
+  font-weight: 700;
+  line-height: 94.96px;
+  text-align: center;
+  width: 688px;
+  height: 95px;
+
+
+
+}
+
+.textOverlay-2 {
+  position: absolute;
+  /* Position the text over the image */
+  top: 60%;
+  /* Adjust this value to position vertically */
+  left: 50%;
+  /* Adjust this value to position horizontally */
+  transform: translate(-50%, -50%);
+  /* Center the text */
+  color: white;
+  /* Text color */
+  padding: 10px;
+  /* Optional: padding around the text */
+  border-radius: 5px;
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 42px;
+  text-align: center;
+  width: 915px;
+  height: 84px;
+
+}
+
+
+
+.inactive {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 10px;
+  height: 54px;
+  border-radius: 30px;
+  opacity: 0px;
+  border: 1px solid #D0D0D0;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  min-width: 79px;
+}
+
+.active {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 10px;
+  height: 54px;
+  border-radius: 30px;
+  opacity: 0px;
+  border: 1px solid #D0D0D0;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #3481E8;
+  /* Change background color on hover */
+  color: white;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  min-width: 79px;
+
+}
+
+.filter:hover {
+  color: white;
+  background-color: #3481E8;
+  /* Change background color on hover */
+}
+
+
+
+.button-filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+  max-height: 80%;
+  overflow: hidden;
+  position: relative;
+  padding: 20px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+  width: 50px;
+  text-align: left;
+}
+
+.popup-content {
+  text-align: center;
+  padding: 0px;
+  background-color: black;
+}
+
+.popup img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.popup-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 542px;
+  color: white;
+
+}
+
+.nav-button {
+  color: #fff;
+  border: none;
+  background-color: transparent;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 22.5px;
+  height: 56px;
+}
+
+.popup-navigation button {
+  background-color: #0056b3;
+}
+
+.popup-navigation button:hover {
+  background-color: #0056b3;
+}
+
+.popup-details {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 42px;
+  text-align: center;
+
+  width: 195px;
+  height: 42px;
+
+
+}
+
+.view-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  max-width: 20%;
+  justify-content: center;
+  align-items: left;
+}
+
+.footer-child {
+  margin: 10px;
+}
+
+.school-name {
+  font-family: Playfair Display;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23.99px;
+  text-align: left;
+
+}
+
+.school-motto {
+  color: #232C95;
+}
+
+.cards-parent-school {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 40px;
+  margin-right: 40px;
+  justify-content: center;
+  align-items: start;
+}
+
+.company-creds {
+  display: flex;
+  margin-top: 20px
+}
+
+.design {
+  width: 99px;
+  height: 24px;
+
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: left;
+  color: #4A4A4A;
+
+
+}
+
+.footer-item-2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  max-width: 40%;
+  justify-content: center;
+  align-items: start;
+}
+
+.cards-parent-2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 150px;
+  margin-right: 40px;
+  justify-content: left;
+  align-items: start;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: space-between;
+  min-width: 1350px;
+}
+
+.donate-2 {
+  background: #F54E39;
+  border: none;
+  width: 163px;
+  height: 50px;
+  color: white;
+  border-radius: 7px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin: 10px;
+}
+
+.csr:hover {
+  outline: solid 0.5px #ff1e00;
+  /* Add an outline on hover */
+}
+
+.donate:hover {
+  background: red;
+}
+
+.donate-2:hover {
+  background: red;
+}
