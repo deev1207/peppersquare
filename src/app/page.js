@@ -83,12 +83,7 @@ export default function Home() {
             return { id: item.id, ...item.attributes, img: img.data.url }
           }
           catch (error) {
-            const img = await axios.get(`https://tidy-fellowship-f2bac71330.strapiapp.com/api/upload/files/1`, {
-              headers: {
-                Authorization: `bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`
-              }
-            })
-            return { id: item.id, ...item.attributes, img: img.data.url }
+            console.log(error);
           }
 
         }))
